@@ -1,0 +1,40 @@
+pt-cache search <search term>
+To find packages that have that name and versions available.
+
+sudo netstat -tap | grep mysql
+Is mysql running? should see something like this:
+tcp	0	0 	localhost:mysql	*|*		LISTEN	5979/mysqld
+
+ps -ef 
+Gives every process running
+
+wc -l
+Counts line numbers on something
+
+grep “<search term>”
+only searches for things that contain that. 
+
+scp
+ssh into a server
+
+du -hs <filename> 
+To get size of directory
+
+baobab
+To check ubuntu file size distribution
+
+find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u
+Finding folders with distinct file extensions in a folder hierarchy:
+
+ls -la
+Find timestamp for files
+
+for user in $(cut -f1 -d: /etc/passwd); do echo $user; crontab -u $user -l; done
+Iterates through users and finds crontab jobs
+
+Arch:
+tells me the architecture type of the server.
+
+prints out subdirectory tree:
+find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+
